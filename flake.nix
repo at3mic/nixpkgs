@@ -6,7 +6,13 @@
   };
 
   outputs = { self, nixpkgs }: {
-    packages = { };
+    packages = {
+      x86_64-linux = {
+        sklauncher3 = nixpkgs.legacyPackages.x86_64-linux.callPackage
+          ./packages/sklauncher/sklauncher3.nix
+          { };
+      }
+    };
 
     homeModules.default = ./modules/hm;
     nixosModules.default = ./modules/nixos;
