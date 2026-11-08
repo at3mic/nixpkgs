@@ -46,6 +46,7 @@ stdenvNoCC.mkDerivation {
 
   meta = {
     description = "The cross-platform SKlauncher for managing Minecraft instances, mods, and modpacks across Windows, macOS, and Linux.";
+    license = lib.licenses.unfree;
     mainProgram = "sklauncher4";
     platforms = lib.platforms.linux;
   };
