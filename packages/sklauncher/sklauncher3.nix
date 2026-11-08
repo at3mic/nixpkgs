@@ -53,7 +53,6 @@ stdenvNoCC.mkDerivation {
   meta = {
     description = "Secure and Modern Minecraft Launcher";
     mainProgram = "sklauncher3";
-    license = lib.licenses.unfree;
     platforms = lib.platforms.linux;
   };
 }
