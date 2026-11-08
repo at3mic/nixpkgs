@@ -11,6 +11,9 @@
         sklauncher3 = nixpkgs.legacyPackages.x86_64-linux.callPackage
           ./packages/sklauncher/sklauncher3.nix
           { };
+        sklauncher4 = nixpkgs.legacyPackages.x86_64-linux.callPackage
+          ./packages/sklauncher/sklauncher4.nix
+          { };
       };
     };
 
